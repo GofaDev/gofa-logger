@@ -3,6 +3,9 @@
 ## Installation
 
 Add it in your root build.gradle at the end of repositories:
+
+- Groovy DSL
+
 ```groovy
 allprojects {
     repositories {
@@ -12,9 +15,32 @@ allprojects {
 }
 ```
 
+- Kotlin DSL
+
+```kotlin
+allprojects {
+    repositories {
+        ...
+        maven(url = "https://jitpack.io")
+    }
+}
+```
+
+Add the dependency
+
+- Groovy DSL
+
 ```groovy
 dependencies {
     implementation 'com.github.gofa-software:gofa-logger:1.0.0'
+}
+```
+
+- Kotlin DSL
+
+```kotlin
+dependencies {
+    implementation("com.github.gofa-software:gofa-logger:1.0.0")
 }
 ```
 
